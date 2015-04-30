@@ -5,6 +5,7 @@ public class Musica {
 	private String nome;
 	private int duracao;
 	private String tipo;
+	
 
 	public Musica(String nome, int duracao, String tipo) throws Exception {
 
@@ -27,14 +28,10 @@ public class Musica {
 			Musica outraMusica = (Musica) outra;
 			if (this.nome.equals(outraMusica.getNome())) {
 				return true;
-			}	
-			
+			}
 			if (this.duracao == outraMusica.getDuracao()){
 				return true;
 			}
-			
-				
-
 			return false;
 	}
 
